@@ -20,6 +20,6 @@ final_domains = (
 
 CSV.open('domains.csv', 'wb') do |csv|
   final_domains.each do |domain|
-    csv << [domain]
+    csv << [domain, nil]
   end
 end
